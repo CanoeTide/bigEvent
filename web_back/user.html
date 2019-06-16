@@ -117,7 +117,7 @@
         $('.btn-success').on('click', function (e) {
             e.preventDefault();
 
-            //新建一个formData对象
+            //新建一个formData对象 必须是dom对象(取下标)
             var formData = new FormData($('.article_form')[0]);
             //发送ajax
             $.ajax({
